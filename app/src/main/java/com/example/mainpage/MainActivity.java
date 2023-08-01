@@ -1,4 +1,4 @@
-package com.example.widget4;
+package com.example.mainpage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
