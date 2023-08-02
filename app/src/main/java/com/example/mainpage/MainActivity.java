@@ -1,4 +1,4 @@
-package com.example.widget4;
+package com.example.mainpage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +20,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Chronometer timer;
+    // Chronometer timer;
     Button start, end;
     RadioGroup rGroup;
     RadioButton rbtn1, rbtn2;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("시간 예약");
 
-        timer = (Chronometer)findViewById(R.id.timer);
+        // timer = (Chronometer)findViewById(R.id.timer);
         start = (Button)findViewById(R.id.start);
         end = (Button)findViewById(R.id.end);
         rGroup = (RadioGroup)findViewById(R.id.rGroup);
@@ -71,17 +71,17 @@ public class MainActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                timer.setBase(SystemClock.elapsedRealtime());
-                timer.start();
-                timer.setTextColor(Color.RED);
+                // timer.setBase(SystemClock.elapsedRealtime());
+                // timer.start();
+                // timer.setTextColor(Color.RED);
             }
         });
 
         end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                timer.stop();
-                timer.setTextColor(Color.BLUE);
+                // timer.stop();
+                // timer.setTextColor(Color.BLUE);
                 textViews[0].setText(Integer.toString(t_year));
                 textViews[1].setText(Integer.toString(t_month));
                 textViews[2].setText(Integer.toString(t_day));

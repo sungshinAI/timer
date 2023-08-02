@@ -12,19 +12,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Chronometer
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:id="@+id/timer"
-            android:format="예약에 걸린 시간 %s"/>
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="예약 시작"
             android:layout_margin="5dp"
+            android:background="@drawable/buttonround"
             android:gravity="center"
             android:id="@+id/start"/>
 
@@ -73,12 +66,14 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="예약 완료"
             android:padding="5dp"
-            android:id="@+id/end"/>
+            android:id="@+id/end"
+            android:background="@drawable/buttonround" />
 
         <TextView
             android:paddingLeft="5dp"
@@ -122,10 +117,11 @@
             android:text="00"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분에 예약됨"/>
+            android:text="까지 일정을 등록하세요" />
 
     </LinearLayout>
 </LinearLayout>
